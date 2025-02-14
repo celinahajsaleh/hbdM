@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HBD Michele</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cake">
+        <div class="candle"></div>
+        <div class="top-layer"></div>
+        <div class="middle-layer"></div>
+        <div class="bottom-layer"></div>
+        <div class="message">
+            <h1> Happy Birthday Michele! </h1>
+        </div>
+        <audio id="hbd" src="./happy-birthday-266285.mp3"></audio>
+      </div>
+    </div>
+    <script>
+        setTimeout(() => {
+          const audio = document.getElementById('celebration-audio');
+          audio.currentTime = 0;  
+          audio.play().catch(error => console.log('Audio play failed:', error));
+        }, 6000); 
+      </script>
+      
+  </body>
+ 
+
+</html>
